@@ -31,6 +31,7 @@ def add_line(base_value: str, added_value: str) -> str:
 
 
 def parse_document(document: list) -> dict:
+    """Parse list of string to dictionary"""
     result: dict[str, str] = {}
     for line in document:
         if check_no_key(line):
